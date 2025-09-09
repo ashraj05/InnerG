@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Sparkles, MessageSquare, BookOpen, ClipboardCheck, Users } from "lucide-react";
+import { Sparkles, MessageSquare, BookOpen, ClipboardCheck, Store } from "lucide-react";
 
 const navItems = [
-  { href: "/home", label: "Do", icon: Sparkles },
   { href: "/talk", label: "Talk", icon: MessageSquare },
+  { href: "/do", label: "Do", icon: Sparkles },
   { href: "/learn", label: "Learn", icon: BookOpen },
   { href: "/test", label: "Test", icon: ClipboardCheck },
-  { href: "/community", label: "Community", icon: Users },
+  { href: "/store", label: "Store", icon: Store },
 ];
 
 export default function BottomNav() {

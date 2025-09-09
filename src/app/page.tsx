@@ -19,7 +19,7 @@ export default function OnboardingPage() {
   const router = useRouter();
 
   const nextStep = () => setStep((prev) => (prev < totalSteps ? prev + 1 : prev));
-  const finishOnboarding = () => router.push("/home");
+  const finishOnboarding = () => router.push("/talk");
 
   const progress = (step / totalSteps) * 100;
 

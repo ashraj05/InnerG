@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Flame, Wind, BrainCircuit, Target, Star } from "lucide-react";
 import Image from "next/image";
 
-export default function HomePage() {
+export default function DoPage() {
   return (
     <div className="p-4 sm:p-6 space-y-6">
       <header className="space-y-1">
