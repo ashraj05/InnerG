@@ -28,10 +28,12 @@ export default function MainLayout({
             </Link>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="outline" className="rounded-full">
-              <Wallet className="mr-2 h-4 w-4" />
-              $0.00
-            </Button>
+            <Link href="/wallet">
+              <Button variant="outline" className="rounded-full">
+                <Wallet className="mr-2 h-4 w-4" />
+                $0.00
+              </Button>
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
