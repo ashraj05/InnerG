@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const books = [
   {
-    title: "The Power of Habit",
-    description: "Why we do what we do in life and business.",
+    title: "Pixel to Purpose",
+    description: "You Are Not Alone in the Matrix ",
     image: "https://picsum.photos/seed/book1/300/400",
     hint: "book cover",
     price: "$18",
   },
   {
-    title: "Atomic Habits",
+    title: "InnerG",
     description: "Tiny changes, remarkable results.",
     image: "https://picsum.photos/seed/book2/300/400",
     hint: "book cover abstract",

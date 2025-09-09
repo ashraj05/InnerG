@@ -14,7 +14,7 @@ export default function MainLayout({
       <div className="relative flex h-full w-full max-w-lg flex-col border-x bg-background shadow-md">
         <header className="flex h-16 w-full items-center justify-between border-b bg-card px-4 shrink-0">
           <div className="flex items-center gap-2">
-            <Link href="/do">
+            <Link href="/dashboard">
               <Button variant="ghost" size="icon">
                 <Home className="h-6 w-6" />
                 <span className="sr-only">Dashboard</span>
