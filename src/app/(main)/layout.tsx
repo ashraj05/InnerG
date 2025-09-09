@@ -1,6 +1,7 @@
 import BottomNav from '@/components/bottom-nav';
 import { Button } from '@/components/ui/button';
-import { Home, Users, Wallet, Menu } from 'lucide-react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Home, Users, Wallet, Menu, User, Gift, MessageSquareWarning, Settings, LogOut, Receipt } from 'lucide-react';
 import Link from 'next/link';
 
 export default function MainLayout({
@@ -31,10 +32,43 @@ export default function MainLayout({
               <Wallet className="mr-2 h-4 w-4" />
               $0.00
             </Button>
-            <Button variant="ghost" size="icon">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Menu</span>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Menu</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  <User className="mr-2 h-4 w-4" />
+                  <span>Profile</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Gift className="mr-2 h-4 w-4" />
+                  <span>Refer & Earn</span>
+                </DropdownMenuItem>
+                 <DropdownMenuItem>
+                  <Receipt className="mr-2 h-4 w-4" />
+                  <span>Receipts</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <MessageSquareWarning className="mr-2 h-4 w-4" />
+                  <span>Report a Problem</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Settings className="mr-2 h-4 w-4" />
+                  <span>Settings</span>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>Logout</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </header>
         <main className="flex-1 overflow-y-auto pb-24">{children}</main>
