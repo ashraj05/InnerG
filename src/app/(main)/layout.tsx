@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Home, Users, Wallet, Menu, User, Gift, MessageSquareWarning, Settings, LogOut, Receipt } from 'lucide-react';
 import Link from 'next/link';
+import Logo from '@/components/logo';
 
 export default function MainLayout({
   children,
@@ -27,6 +28,12 @@ export default function MainLayout({
               </Button>
             </Link>
           </div>
+          
+          <Link href="/dashboard" className="absolute left-1/2 -translate-x-1/2">
+             <Logo className="h-8 w-auto text-foreground" />
+             <span className="sr-only">InnerG Home</span>
+          </Link>
+
           <div className="flex items-center gap-2">
             <Link href="/wallet">
               <Button variant="outline" className="rounded-full">
