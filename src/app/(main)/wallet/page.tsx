@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { CreditCard, History, భారతీయ రూపాయి } from "lucide-react";
+import { CreditCard, History, IndianRupee } from "lucide-react";
 
 const rechargePacks = [
   { amount: 99, color: "bg-green-100", textColor: "text-green-800" },
