@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Flame, Wind, BrainCircuit, Target, Star, Zap } from "lucide-react";
+import { Flame, Wind, BrainCircuit, Target, Star, Zap, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 function ExerciseBallIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -69,6 +69,17 @@ export default function DoPage() {
           <CardContent>
             <p className="text-sm text-muted-foreground mb-4">Strengthen your pelvic floor muscles.</p>
             <Button variant="outline" className="w-full">Start Practice</Button>
+          </CardContent>
+        </Card>
+        
+        <Card className="hover:shadow-md transition-shadow">
+          <CardHeader>
+            <Sparkles className="h-8 w-8 text-accent mb-2" />
+            <CardTitle className="text-lg">Affirmations</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground mb-4">Reinforce positive beliefs about yourself.</p>
+            <Button variant="outline" className="w-full">Practice Affirmations</Button>
           </CardContent>
         </Card>
       </div>

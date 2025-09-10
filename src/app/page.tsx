@@ -54,7 +54,7 @@ const Step1 = ({ nextStep }: { nextStep: () => void }) => (
   <div className="flex flex-col items-center text-center space-y-6">
     <Flower2 className="h-16 w-16 text-primary" />
     <div className="space-y-2">
-        <h2 className="text-xl font-semibold font-headline">Welcome to FocusFlow</h2>
+        <h2 className="text-xl font-semibold font-headline">Welcome to InnerG</h2>
         <p className="text-muted-foreground">
         Let's get to know you a bit. This will help us personalize your journey to better focus and well-being.
         </p>
