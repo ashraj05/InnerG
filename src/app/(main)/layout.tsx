@@ -1,7 +1,7 @@
 import BottomNav from '@/components/bottom-nav';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { Home, Users, Wallet, Menu, User, Gift, MessageSquareWarning, Settings, LogOut, Receipt } from 'lucide-react';
+import { Home, Users, Wallet, Menu, User, Gift, MessageSquareWarning, Settings, LogOut, Receipt, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import Logo from '@/components/logo';
 
@@ -41,6 +41,10 @@ export default function MainLayout({
                 $0.00
               </Button>
             </Link>
+            <Button variant="ghost" size="icon">
+                <ShoppingCart className="h-6 w-6" />
+                <span className="sr-only">Cart</span>
+            </Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
